@@ -1,1 +1,275 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAVEX RP | Official Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080b12;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      border-bottom: 1px solid #242a38;
+      background: #0d111b;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #e63946;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #e63946;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 80px;
+      background: radial-gradient(ellipse at top, #242039, #080b12 70%);
+    }
+
+    .tag {
+      color: #e63946;
+      letter-spacing: 4px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #e63946;
+    }
+
+    .hero p {
+      color: #b5bac7;
+      font-size: 18px;
+      line-height: 1.9;
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #e63946;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid #555c6d;
+    }
+
+    .features {
+      padding: 55px 8%;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 28px;
+      background: #111722;
+      border: 1px solid #262e3e;
+      border-radius: 12px;
+      text-align: right;
+    }
+
+    .card h3 {
+      color: #e63946;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #b5bac7;
+      line-height: 1.8;
+    }
+
+    footer {
+      border-top: 1px solid #242a38;
+      padding: 25px;
+      text-align: center;
+      color: #8e96a8;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">RAVEX RP</div>
+    <nav>
+      <a href="#home" id="homeLink">الرئيسية</a>
+      <a href="#features" id="featuresLink">المميزات</a>
+      <a href="#login" id="loginLink">تسجيل الدخول</a>
+      <button class="btn secondary" id="langBtn" type="button">English</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="tag">YOUR STORY STARTS HERE</div>
+      <h1>مرحباً بك في <span>RAVEX RP</span></h1>
+      <p>
+        اصنع قصتك، ابنِ مستقبلك، وعِش تجربة رول بلاي مختلفة.
+        عالمك الجديد يبدأ من هنا.
+      </p>
+      <a class="btn" href="#login" id="heroLogin">سجّل دخولك الآن</a>
+      <a class="btn secondary" href="#features" id="heroFeatures">اكتشف الموقع</a>
+    </section>
+
+    <section class="features" id="features">
+      <h2 id="featuresTitle">مميزات RAVEX RP</h2>
+      <div class="cards">
+        <article class="card">
+          <h3 id="card1Title">🎮 تجربة رول بلاي</h3>
+          <p id="card1Text">عالم مليء بالفرص والقصص والشخصيات المختلفة.</p>
+        </article>
+        <article class="card">
+          <h3 id="card2Title">🛡️ مجتمع منظم</h3>
+          <p id="card2Text">نظام واضح يساعد على تقديم تجربة ممتعة للجميع.</p>
+        </article>
+        <article class="card">
+          <h3 id="card3Title">🌐 موقع رسمي</h3>
+          <p id="card3Text">تابع أخبار المشروع واستعد للانضمام إلى المجتمع.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features" id="login">
+      <h2 id="loginTitle">تسجيل الدخول</h2>
+      <p id="loginText" style="color:#b5bac7;line-height:2;margin-bottom:20px">
+        تسجيل الدخول عن طريق Discord سيتم تفعيله بعد إعداد نظام المصادقة الآمن.
+      </p>
+      <a class="btn" href="https://discord.com/" target="_blank" rel="noopener noreferrer" id="discordBtn">Discord</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 RAVEX RP — All Rights Reserved
+  </footer>
+
+  <script>
+    const translations = {
+      ar: {
+        homeLink: "الرئيسية",
+        featuresLink: "المميزات",
+        loginLink: "تسجيل الدخول",
+        langBtn: "English",
+        tag: "قصتك تبدأ من هنا",
+        heading: 'مرحباً بك في <span>RAVEX RP</span>',
+        description: "اصنع قصتك، ابنِ مستقبلك، وعِش تجربة رول بلاي مختلفة. عالمك الجديد يبدأ من هنا.",
+        heroLogin: "سجّل دخولك الآن",
+        heroFeatures: "اكتشف الموقع",
+        featuresTitle: "مميزات RAVEX RP",
+        card1Title: "🎮 تجربة رول بلاي",
+        card1Text: "عالم مليء بالفرص والقصص والشخصيات المختلفة.",
+        card2Title: "🛡️ مجتمع منظم",
+        card2Text: "نظام واضح يساعد على تقديم تجربة ممتعة للجميع.",
+        card3Title: "🌐 موقع رسمي",
+        card3Text: "تابع أخبار المشروع واستعد للانضمام إلى المجتمع.",
+        loginTitle: "تسجيل الدخول",
+        loginText: "تسجيل الدخول عن طريق Discord سيتم تفعيله بعد إعداد نظام المصادقة الآمن.",
+        discordBtn: "دخول Discord"
+      },
+      en: {
+        homeLink: "Home",
+        featuresLink: "Features",
+        loginLink: "Login",
+        langBtn: "العربية",
+        tag: "YOUR STORY STARTS HERE",
+        heading: "Welcome to <span>RAVEX RP</span>",
+        description: "Create your story, build your future, and experience a different kind of roleplay. Your new world starts here.",
+        heroLogin: "Login Now",
+        heroFeatures: "Explore Website",
+        featuresTitle: "RAVEX RP Features",
+        card1Title: "🎮 Roleplay Experience",
+        card1Text: "A world full of opportunities, stories, and unique characters.",
+        card2Title: "🛡️ Organized Community",
+        card2Text: "A clear system designed to make the experience enjoyable.",
+        card3Title: "🌐 Official Website",
+        card3Text: "Follow project updates and get ready to join the community.",
+        loginTitle: "Login",
+        loginText: "Discord login will be enabled after secure authentication is configured.",
+        discordBtn: "Continue to Discord"
+      }
+    };
+
+    let language = "ar";
+
+    document.getElementById("langBtn").addEventListener("click", () => {
+      language = language === "ar" ? "en" : "ar";
+      const t = translations[language];
+
+      document.documentElement.lang = language;
+      document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+
+      Object.keys(t).forEach((id) => {
+        const element = document.getElementById(id);
+        if (element) element.innerHTML = t[id];
+      });
+    });
+  </script>
+</body>
+</html>
